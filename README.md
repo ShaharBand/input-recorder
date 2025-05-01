@@ -13,6 +13,8 @@ A lightweight Python script to record and replay mouse and keyboard events on yo
 Make sure uv is installed:
 ```shell
 curl -Ls https://astral.sh/uv/install.sh | sh
+
+uv sync
 ```
 
 #### 🎥 Recording Input Events
