@@ -76,7 +76,6 @@ class EventPlayer(BaseModel):
         print(f"Stopped playing recording {self.input_file_path}")
 
     def __apply_mouse_delta(self, dx: int, dy: int) -> None:
-
         self.__mouse.move(dx, dy)
 
     @staticmethod
