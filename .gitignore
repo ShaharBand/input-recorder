@@ -1,0 +1,4 @@
+overlay.py
+.venv
+uv.lock
+.python-version
