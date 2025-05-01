@@ -1,5 +1,5 @@
 # 🖱️ Computer Input Recorder & Player
-A lightweight Python tool to record and replay mouse and keyboard events on your computer — ideal for automation, testing, or demonstrations.
+A lightweight Python script to record and replay mouse and keyboard events on your computer — ideal for automation, testing, or demonstrations.
 
 ### 📦 Features
 - ⌨️ Records keyboard presses and releases
