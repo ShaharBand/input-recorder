@@ -2,3 +2,6 @@ overlay.py
 .venv
 uv.lock
 .python-version
+*.json
+.idea
+__pycache__
