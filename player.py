@@ -5,17 +5,15 @@ import ctypes
 from pydantic import BaseModel, Field
 from pynput import keyboard
 from pynput.mouse import Controller as MouseController
-from pynput.keyboard import Key, Listener, KeyCode
+from pynput.keyboard import Key, Listener
 import pyautogui
 import pydirectinput
+
+from event import RecordingEvent, MouseMoveEvent, MouseClickEvent, MouseScrollEvent, KeyPressEvent, KeyReleaseEvent, MousePositionEvent, WaitEvent, ImageClickEvent, RunRecordingEvent
 
 # Make pydirectinput as fast and game-friendly as possible
 pydirectinput.PAUSE = 0
 pydirectinput.FAILSAFE = False
-
-from event import (RecordingEvent, MouseMoveEvent, MouseClickEvent,
-                   MouseScrollEvent, KeyPressEvent, KeyReleaseEvent, MousePositionEvent, WaitEvent, ImageClickEvent,
-                   RunRecordingEvent)
 
 try:
     ctypes.windll.shcore.SetProcessDpiAwareness(2)  # 2 = PROCESS_PER_MONITOR_DPI_AWARE
@@ -182,7 +180,8 @@ class EventPlayer(BaseModel):
             raise RuntimeError("Not currently playing")
 
         for event in self.__events:
-            if not self.playing: break
+            if not self.playing: 
+                break
 
             now = time.perf_counter() - self.__start_time
             target_time = event.time / self.speed_multiplier
