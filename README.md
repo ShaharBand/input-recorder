@@ -29,6 +29,3 @@ To replay previously recorded events:
 uv run python .\event_player.py
 ```
 
-
-### ⚠️ Notes
-The overlay feature is currently under development and excluded from this version.
