@@ -65,6 +65,8 @@ Use the GUI to compose more complex macros from building blocks like waits, reco
 uv run python gui.py
 ```
 
+![Macro Manager GUI](imgs/ui.png)
+
 In the GUI you can:
 - **Record** a new low‑level recording (configurable start/stop function keys)
 - **Add steps**: Wait, Play Recording, Click Image, Key Press, Mouse Click, Mouse Position
